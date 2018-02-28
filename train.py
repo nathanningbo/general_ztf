@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-import input_data
 import tensorflow as tf
 import numpy as np
 from read_from_TFRecord import read_and_decode

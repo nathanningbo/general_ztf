@@ -7,7 +7,7 @@ import os
 image_shape = 32
 
 
-root_path = 'D://data//train//'
+root_path = 'E://data//train//'
 tfrecord_file = os.path.join(root_path, 'tfrecords/car.tfrecords')
 
 
@@ -38,9 +38,9 @@ def read_and_decode(filename_queue, batch_size, random_crop=False, random_filp=T
     if shuffle_batch:
         image_batch, mask_batch = tf.train.shuffle_batch([image, label],
                                                          batch_size=batch_size,
-                                                         capacity=20,
+                                                         capacity=batch_size*5,
                                                          num_threads=2,
-                                                         min_after_dequeue=5)
+                                                         min_after_dequeue=batch_size*2)
     else:
         image_batch, mask_batch = tf.train.batch(
             [image, label],

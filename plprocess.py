@@ -12,9 +12,9 @@ def images_copy_and_rename(oldpath, newpath ,imagetype, imgstartnum):
     for file in os.listdir(oldpath):
         if os.path.isfile(os.path.join(oldpath, file))==True:
             if os.path.splitext(file)[1] == imagetype:#.jpg
-                count += 1
                 newname = str(count) +imagetype
                 shutil.copyfile(os.path.join(oldpath, file), os.path.join(newpath, newname))
+                count += 1
                 print( file )
     print( '路径下有'+ str(count)+'张'+imagetype)
     return 1
@@ -51,10 +51,11 @@ def get_imgpath_and_label( txtpath, txtname):
 
 if(__name__ == '__main__'):
         #newpath ='D:\\BigTruck\\new7\\'
-        path = 'D://tftest//train//car'
-        newpath = 'D://tftest//train//'
-        #images_copy_and_rename(path, newpath, '.jpg',6088)
+        #path = 'E://data//images//2'
+        #newpath = 'E://data//train//2'
+        newpath = 'E://data'
+        #images_copy_and_rename(path, newpath, '.jpg',12279)
         #gen_img_label_text( path, newpath ,'11112.txt', ' 1 ')
-        direct_gen_text( '.jpg', [ 6088,8027], newpath, 'train.txt' )
+        direct_gen_text( '.jpg', [ 12278,24174], newpath, 'train.txt' )
         #data_dict = get_imgpath_and_label(newpath, '9222.txt')
         #print(data_dict)

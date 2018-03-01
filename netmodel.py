@@ -51,5 +51,5 @@ def inference( image, keep_prob):
     ## fc2 layer ##
     W_fc2 = weight_variable([1024, 2])
     b_fc2 = bias_variable([2])
-    prediction = tf.nn.softmax(tf.matmul(h_fc1_drop, W_fc2) + b_fc2)
-    return prediction
+    y = tf.nn.softmax(tf.matmul(h_fc1_drop, W_fc2) + b_fc2)
+    return y

@@ -21,11 +21,11 @@ def _int64_feature(value):
     )
 
 
-root_path = 'D://data//train//'
-tfrecords_filename = root_path + 'tfrecords/car2.tfrecords'
+root_path = 'E://data//train//'
+tfrecords_filename = root_path + 'tfrecords/car.tfrecords'
 writer = tf.python_io.TFRecordWriter(tfrecords_filename)
 
-txt_file = 'D://data//train//train.txt'
+txt_file = 'E://data//train//train.txt'
 fr = open(txt_file)
 
 for i in fr.readlines():

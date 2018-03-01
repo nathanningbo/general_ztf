@@ -12,40 +12,53 @@ import netmodel
 #   labels_one_hot = np.zeros((num_labels, num_classes))
 #   labels_one_hot.flat[index_offset + labels_dense.ravel()] = 1
 #   return labels_one_hot
-root_path = 'D://data//train//'
+root_path = 'E://data//train//'
 tfrecord_file = os.path.join(root_path, 'tfrecords/car.tfrecords')
 filename_queue = tf.train.string_input_producer([tfrecord_file])
-image, label = read_and_decode(filename_queue, 5)
+image, label = read_and_decode(filename_queue, 50)
 
 y_ = tf.one_hot(label,2)
-prediction = netmodel.inference( image, 0.5)
+y = netmodel.inference( image, 0.5)
 
 cross_entropy = tf.reduce_mean(
-    tf.nn.softmax_cross_entropy_with_logits(labels=y_, logits=prediction))
-train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
+     tf.nn.softmax_cross_entropy_with_logits(labels=y_, logits=y))
+#cross_entropy = -tf.reduce_sum(y_*tf.log(prediction))
+train_step = tf.train.GradientDescentOptimizer(0.001).minimize(cross_entropy)
+#train_step = tf.train.AdamOptimizer(1e-3).minimize(cross_entropy)
 
 init_op = tf.global_variables_initializer()
+is_train = True
+#is_train = Flase
 # Init model
+
 with tf.Session() as sess:
     sess.run(init_op)
+    saver = tf.train.Saver(max_to_keep=5)
     i = 0
     coord = tf.train.Coordinator()
     threads = tf.train.start_queue_runners(coord=coord)
-    # while not coord.should_stop():
-    #     #sess.run(train_step, feed_dict={x: image, y_: dense_to_one_hot(mask)})
-    #     _,s = sess.run([train_step,cross_entropy])
-    #     print(s)
-    while not coord.should_stop():
-        i +=1
-        #sess.run(y_)
-        sess.run(train_step)
-        if(i%5 == 0 ):
+    if is_train:
+        while not coord.should_stop():
+            sess.run(train_step)
+            if(i%5 == 0 ):
+                print(sess.run(cross_entropy))
+            if(i%100 == 0 ):
+                 correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
+                 print('----------------')
+                 print(sess.run(correct_prediction))
+                 print('----------------')
+                 saver.save(sess, 'E://data//train//checkpoint//car.ckpt', global_step=i)
+            if(i%500 == 0):
+                coord.request_stop()
+    else:
+        model_file = tf.train.get_checkpoint_state('E://data//train//checkpoint//')
+        saver.restore(sess,'E://data//train//checkpoint'+ '.\\'+'car.ckpt-300')
+        correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
+        while not coord.should_stop():
+            print(sess.run(correct_prediction))
             print(sess.run(cross_entropy))
-        if(i%100 == 0 ):
-             correct_prediction = tf.equal(tf.argmax(prediction, 1), tf.argmax(y_, 1))
-             print('----------------')
-             print(sess.run(correct_prediction))
-             print('----------------')
+            #print(sess.run(cross_entropy))
+
             # accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
             # print(sess.run(accuracy))
 #sess = tf.InteractiveSession()

@@ -11,7 +11,7 @@ root_path = 'E://data//train//'
 tfrecord_file = os.path.join(root_path, 'tfrecords/car.tfrecords')
 
 
-def read_and_decode(filename_queue, batch_size, random_crop=False, random_filp=True, shuffle_batch=True ):
+def read_and_decode(filename_queue, batch_size, random_crop=False, random_filp=True, shuffle_batch=True):
     reader = tf.TFRecordReader()
     _, serialized_example = reader.read(filename_queue)
     features = tf.parse_single_example(

@@ -29,8 +29,6 @@ train_step = tf.train.GradientDescentOptimizer(0.001).minimize(cross_entropy)
 init_op = tf.global_variables_initializer()
 is_train = True
 #is_train = Flase
-# Init model
-
 with tf.Session() as sess:
     sess.run(init_op)
     saver = tf.train.Saver(max_to_keep=5)
@@ -39,6 +37,7 @@ with tf.Session() as sess:
     threads = tf.train.start_queue_runners(coord=coord)
     if is_train:
         while not coord.should_stop():
+            i +=1
             sess.run(train_step)
             if(i%5 == 0 ):
                 print(sess.run(cross_entropy))

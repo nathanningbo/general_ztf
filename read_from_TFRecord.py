@@ -4,14 +4,10 @@ import numpy as np
 #import scipy.io as sio
 import matplotlib.pyplot as plt
 import os
-image_shape = 32
 
 
-root_path = 'E://data//train//'
-tfrecord_file = os.path.join(root_path, 'tfrecords/car.tfrecords')
 
-
-def read_and_decode(filename_queue, batch_size, random_crop=False, random_filp=True, shuffle_batch=True):
+def read_and_decode(filename_queue, batch_size = 50, imgsize = [32,32,3],random_crop=False, random_filp=True, shuffle_batch=True, img_decode_type = tf.float64):
     reader = tf.TFRecordReader()
     _, serialized_example = reader.read(filename_queue)
     features = tf.parse_single_example(
@@ -22,14 +18,12 @@ def read_and_decode(filename_queue, batch_size, random_crop=False, random_filp=T
         }
     )
 
-    image = tf.decode_raw(features['image_raw'], tf.float32)
-    #image = tf.reshape(image, [image_shape*image_shape*3])
-    image = tf.reshape(image, [image_shape,image_shape,3])
-
+    image = tf.decode_raw(features['image_raw'], img_decode_type)
+    image = tf.reshape(image, imgsize)
     image = tf.image.per_image_standardization(image)
-
     label = tf.cast(features['image_label'], tf.int64)
     #label = tf.decode_raw(features['image_label'], tf.int64)
+
     print(image, label)
     # if random_filp:
     #     image = tf.image.random_flip_left_right(image)
@@ -54,7 +48,7 @@ def read_and_decode(filename_queue, batch_size, random_crop=False, random_filp=T
 
 def test_run(tfrecord_filename):
     filename_queue = tf.train.string_input_producer([tfrecord_filename])
-    image, mask = read_and_decode(filename_queue,5)
+    image, mask = read_and_decode(filename_queue)
 
     init_op = tf.global_variables_initializer()
 
@@ -93,4 +87,6 @@ def test_run(tfrecord_filename):
         coord.join(threads)
 
 if( __name__ == '__main__'):
+    root_path = 'E://data//train//'
+    tfrecord_file = os.path.join(root_path, 'tfrecords/car.tfrecords')
     test_run(tfrecord_filename=tfrecord_file)

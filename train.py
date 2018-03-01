@@ -12,17 +12,17 @@ import netmodel
 #   labels_one_hot = np.zeros((num_labels, num_classes))
 #   labels_one_hot.flat[index_offset + labels_dense.ravel()] = 1
 #   return labels_one_hot
-root_path = 'E://data//train//'
-tfrecord_file = os.path.join(root_path, 'tfrecords/car.tfrecords')
+root_path = 'E://data//images//'
+tfrecord_file = os.path.join(root_path, 'tfrecords//car.tfrecords')
 filename_queue = tf.train.string_input_producer([tfrecord_file])
-image, label = read_and_decode(filename_queue, 50)
+image, label = read_and_decode(filename_queue,img_decode_type = tf.float32)
 
 y_ = tf.one_hot(label,2)
 y = netmodel.inference( image, 0.5)
 
 cross_entropy = tf.reduce_mean(
      tf.nn.softmax_cross_entropy_with_logits(labels=y_, logits=y))
-#cross_entropy = -tf.reduce_sum(y_*tf.log(prediction))
+#cross_entropy = -tf.reduce_sum(y_*tf.log(y))
 train_step = tf.train.GradientDescentOptimizer(0.001).minimize(cross_entropy)
 #train_step = tf.train.AdamOptimizer(1e-3).minimize(cross_entropy)
 
@@ -46,12 +46,12 @@ with tf.Session() as sess:
                  print('----------------')
                  print(sess.run(correct_prediction))
                  print('----------------')
-                 saver.save(sess, 'E://data//train//checkpoint//car.ckpt', global_step=i)
-            if(i%500 == 0):
+                 saver.save(sess, 'E://data//images//checkpoint//car.ckpt', global_step=i)
+            if(i%700 == 0):
                 coord.request_stop()
     else:
-        model_file = tf.train.get_checkpoint_state('E://data//train//checkpoint//')
-        saver.restore(sess,'E://data//train//checkpoint'+ '.\\'+'car.ckpt-300')
+        model_file = tf.train.get_checkpoint_state('E://data//images//checkpoint//')
+        saver.restore(sess,'E://data//images//checkpoint'+ '.\\'+'car.ckpt-300')
         correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
         while not coord.should_stop():
             print(sess.run(correct_prediction))

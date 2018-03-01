@@ -49,7 +49,7 @@ def gen_img_label_text( imgpath, outfilepath, outfilename ,labelnum):
 #生成txt文件
 def direct_gen_text(imgrootpath ,txtpath, txtname = 'train.txt' ,imgtype = '.jpg'):
     count = 1 #每循环完一次之后，图片id的初始位置
-    type = 1  #label的值
+    type = 0  #label的值
     labeltypes = count_img_type_num(imgrootpath)
     f =  open(os.path.join(txtpath, txtname), 'w')
     for labelnum in labeltypes:
@@ -81,12 +81,12 @@ def get_imgpath_and_label( txtpath, txtname):
     return data_dict
 
 if(__name__ == '__main__'):
-        newpath = 'E://data//train//2'
+        #newpath = 'E://data//train//2'
         #newpath = 'E://data'
         #images_copy_and_rename(path, newpath, '.jpg',12279)
         #gen_img_label_text( path, newpath ,'11112.txt', ' 1 ')
         #direct_gen_text( '.jpg', [ 12278,24174], newpath, 'train.txt' )
-        #direct_gen_text('E://data//images', 'E://data//' )
+        direct_gen_text('E://data//images', 'E://data//' )
         #data_dict = get_imgpath_and_label(newpath, '9222.txt')
         #print(data_dict)
         #print(count_img_type_num('E://data//images'))

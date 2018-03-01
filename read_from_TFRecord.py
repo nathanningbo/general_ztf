@@ -26,7 +26,7 @@ def read_and_decode(filename_queue, batch_size, random_crop=False, random_filp=T
     #image = tf.reshape(image, [image_shape*image_shape*3])
     image = tf.reshape(image, [image_shape,image_shape,3])
 
-    #image = tf.image.per_image_standardization(image)
+    image = tf.image.per_image_standardization(image)
 
     label = tf.cast(features['image_label'], tf.int64)
     #label = tf.decode_raw(features['image_label'], tf.int64)

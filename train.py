@@ -28,7 +28,7 @@ train_step = tf.train.GradientDescentOptimizer(0.001).minimize(cross_entropy)
 
 init_op = tf.global_variables_initializer()
 is_train = True
-#is_train = Flase
+# is_train = False
 with tf.Session() as sess:
     sess.run(init_op)
     saver = tf.train.Saver(max_to_keep=5)

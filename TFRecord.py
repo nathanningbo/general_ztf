@@ -22,11 +22,6 @@ def _int64_feature(value):
         int64_list=tf.train.Int64List(value=[value])
     )
 
-
-#root_path = 'E://data//train//'
-#tfrecords_filename = root_path + 'tfrecords/car.tfrecords'
-#writer = tf.python_io.TFRecordWriter(tfrecords_filename)
-#txt_file = 'E://data//train//train.txt'
 def gen_TFRecord_file( rootpath, tfrecordfilename, txt_file , imgsize, img_encode_type = np.float32 ,mode = True):
     TFRecordPath = os.path.join( rootpath,'tfrecords')
     if (not os.path.exists( TFRecordPath)):

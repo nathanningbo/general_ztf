@@ -22,7 +22,6 @@ y = netmodel2.inference( image, 0.5)
 
 cross_entropy = tf.reduce_mean(
      tf.nn.softmax_cross_entropy_with_logits(labels=y_, logits=y))
-#cross_entropy = -tf.reduce_sum(y_*tf.log(y))
 lr = tf.placeholder(tf.float32, shape=[])
 train_step = tf.train.GradientDescentOptimizer(lr).minimize(cross_entropy)
 #train_step = tf.train.AdamOptimizer(1e-3).minimize(cross_entropy)

@@ -30,20 +30,20 @@ def read_and_decode(filename_queue, batch_size = 50, imgsize = [32,32,3],random_
     #     mask = tf.image.random_flip_left_right(mask)
 
     if shuffle_batch:
-        image_batch, mask_batch = tf.train.shuffle_batch([image, label],
+        image_batch, label_batch = tf.train.shuffle_batch([image, label],
                                                          batch_size=batch_size,
                                                          capacity=batch_size*5,
                                                          num_threads=2,
                                                          min_after_dequeue=batch_size*2)
     else:
-        image_batch, mask_batch = tf.train.batch(
+        image_batch, label_batch = tf.train.batch(
             [image, label],
             batch_size=batch_size,
             capacity=3*batch_size,
             num_threads=2
         )
 
-    return image_batch, mask_batch
+    return image_batch, label_batch
 
 
 def test_run(tfrecord_filename):

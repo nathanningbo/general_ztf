@@ -27,16 +27,20 @@ def _int64_feature(value):
 #tfrecords_filename = root_path + 'tfrecords/car.tfrecords'
 #writer = tf.python_io.TFRecordWriter(tfrecords_filename)
 #txt_file = 'E://data//train//train.txt'
-def gen_TFRecord_file( rootpath, tfrecordfilename, txt_file , imgsize, img_encode_type = np.float32):
+def gen_TFRecord_file( rootpath, tfrecordfilename, txt_file , imgsize, img_encode_type = np.float32 ,mode = True):
     TFRecordPath = os.path.join( rootpath,'tfrecords')
     if (not os.path.exists( TFRecordPath)):
         os.mkdir( TFRecordPath);
     writer = tf.python_io.TFRecordWriter(os.path.join( TFRecordPath, tfrecordfilename))
+    if (mode == True):
+        modename = '//images//'
+    else:
+        modename = '//validate//'
     fr = open(txt_file)
     for i in fr.readlines():
         wholedata = re.split(' ', i)
         #image_path = os.path.join(rootpath ,i.split()[1]+ '//' + i.split()[0])
-        image_path = os.path.join(rootpath + '//images//' + wholedata[1] + '//', wholedata[0])
+        image_path = os.path.join(rootpath + modename + wholedata[1] + '//', wholedata[0])
         image = img_encode_type(misc.imresize(cv2.imread(image_path), (imgsize[0], imgsize[1], imgsize[2])))
         image_label = int(wholedata[1])
         image_raw = image.tostring()
@@ -54,4 +58,5 @@ def gen_TFRecord_file( rootpath, tfrecordfilename, txt_file , imgsize, img_encod
     writer.close()
     fr.close()
 if( __name__ == '__main__'):
-    gen_TFRecord_file('E://data' ,'car.tfrecords', 'E://data//images//train.txt',[32,32,3])
+    #gen_TFRecord_file('E://data' ,'car.tfrecords', 'E://data//train.txt',[32,32,3] )
+    gen_TFRecord_file('E://data' ,'validate.tfrecords', 'E://data//validate.txt',[32,32,3] ,mode = False)

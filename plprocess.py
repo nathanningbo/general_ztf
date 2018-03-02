@@ -7,15 +7,15 @@ import re
 #2.rootpath下不允许有images路径，以及train.txt文件
 #3.rootpath/raw下各种类别的文件名需要按照数字排序好
 #4.rootpath/images为图像输出路径，同时rootpath/images下会生成相应的label文件
-def dataproces(rootpath):
+def dataproces(rootpath , mode = True):
     if (not os.path.exists(rootpath)):
         print('rootpath error')
         return 0
-    RawImgRootPath = os.path.join(rootpath,'raw')
+    RawImgRootPath = os.path.join(rootpath,'rawvalidate')
     if (not os.path.exists(RawImgRootPath)):
         print('RawImgRootPath error')
         return 0
-    ImgRootPath = os.path.join(rootpath,'images')
+    ImgRootPath = os.path.join(rootpath,'validate')
     startnum =1
     if (not os.path.exists( ImgRootPath)):
         os.mkdir( ImgRootPath);
@@ -86,8 +86,8 @@ if(__name__ == '__main__'):
         #images_copy_and_rename(path, newpath, '.jpg',12279)
         #gen_img_label_text( path, newpath ,'11112.txt', ' 1 ')
         #direct_gen_text( '.jpg', [ 12278,24174], newpath, 'train.txt' )
-        direct_gen_text('E://data//images', 'E://data//' )
+        #direct_gen_text('E://data//images', 'E://data//' )
         #data_dict = get_imgpath_and_label(newpath, '9222.txt')
         #print(data_dict)
         #print(count_img_type_num('E://data//images'))
-        #dataproces('E://备份//images_original_2017')
+        dataproces('E://data//')

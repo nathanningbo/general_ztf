@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-11-12T08:07:40.547Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="IwOf5mozuZ7NKho_cXsb" version="12.2.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-12T08:08:58.204Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="_hts3oM1jYlVEXrRMqOC" version="12.2.3" type="github" pages="1">
   <diagram id="2ybl-CBYEVXoLRspCggs" name="Page-1">
-    <mxGraphModel dx="1173" dy="1798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="971" dy="1690" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -133,6 +133,9 @@
         <mxCell id="SjMGYK_2kaPN_tZI_Yqk-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="SjMGYK_2kaPN_tZI_Yqk-62" target="SjMGYK_2kaPN_tZI_Yqk-34">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
+        <mxCell id="SjMGYK_2kaPN_tZI_Yqk-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="SjMGYK_2kaPN_tZI_Yqk-62" target="SjMGYK_2kaPN_tZI_Yqk-34">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
         <mxCell id="SjMGYK_2kaPN_tZI_Yqk-62" value="急停信号" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="105" y="870" width="100" height="50" as="geometry"/>
         </mxCell>
@@ -163,14 +166,14 @@
             <mxPoint x="621" y="1162" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="SjMGYK_2kaPN_tZI_Yqk-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="205" y="907" as="sourcePoint"/>
-            <mxPoint x="205" y="894" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="SjMGYK_2kaPN_tZI_Yqk-83" value="停止" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="121" y="1132" width="68" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="SjMGYK_2kaPN_tZI_Yqk-85" value="" style="endArrow=none;startArrow=classic;html=1;entryX=-0.075;entryY=0.087;entryDx=0;entryDy=0;exitX=0.986;exitY=0.37;exitDx=0;exitDy=0;endFill=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="457.48199999999997" y="890.0500000000002" as="sourcePoint"/>
+            <mxPoint x="599.2249999999999" y="890.096" as="targetPoint"/>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-11-12T09:32:47.015Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="gmPIOkdwKzBhSrvs-xuW" version="12.2.3" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-12T09:43:59.738Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="nEA-IpXIoqsRaa_8Km3Q" version="12.2.3" type="github" pages="1">
   <diagram id="2ybl-CBYEVXoLRspCggs" name="Page-1">
-    <mxGraphModel dx="971" dy="1690" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1408" dy="1924" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -211,17 +211,17 @@
         <mxCell id="SjMGYK_2kaPN_tZI_Yqk-99" value="硬件信息" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
           <mxGeometry x="542" y="1410" width="120" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="SjMGYK_2kaPN_tZI_Yqk-100" value="编译与链接" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="330" y="1510" width="100" height="80" as="geometry"/>
+        <mxCell id="SjMGYK_2kaPN_tZI_Yqk-100" value="编译" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1510" width="100" height="80" as="geometry"/>
         </mxCell>
         <mxCell id="SjMGYK_2kaPN_tZI_Yqk-101" value="目标代码" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="355" y="1740" width="120" height="60" as="geometry"/>
+          <mxGeometry x="334" y="1640" width="120" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="SjMGYK_2kaPN_tZI_Yqk-102" value="程序下载" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="1870" width="100" height="80" as="geometry"/>
+          <mxGeometry x="344" y="1740" width="100" height="80" as="geometry"/>
         </mxCell>
         <mxCell id="SjMGYK_2kaPN_tZI_Yqk-104" value="PLC设备" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="359" y="2020" width="131" height="131" as="geometry"/>
+          <mxGeometry x="330" y="1880" width="131" height="131" as="geometry"/>
         </mxCell>
         <mxCell id="SjMGYK_2kaPN_tZI_Yqk-105" value="" style="endArrow=classic;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SjMGYK_2kaPN_tZI_Yqk-91" target="SjMGYK_2kaPN_tZI_Yqk-95">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -269,6 +269,43 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="503.4999999999998" y="1480" as="sourcePoint"/>
             <mxPoint x="440" y="1560" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjMGYK_2kaPN_tZI_Yqk-115" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.464;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SjMGYK_2kaPN_tZI_Yqk-100" target="SjMGYK_2kaPN_tZI_Yqk-101">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="1480" as="sourcePoint"/>
+            <mxPoint x="347.60000000000014" y="1555.2000000000003" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjMGYK_2kaPN_tZI_Yqk-116" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="SjMGYK_2kaPN_tZI_Yqk-102">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="394" y="1700" as="sourcePoint"/>
+            <mxPoint x="393.68000000000006" y="1751.0200000000004" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjMGYK_2kaPN_tZI_Yqk-117" value="通讯组件" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SjMGYK_2kaPN_tZI_Yqk-102" target="SjMGYK_2kaPN_tZI_Yqk-104">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="404" y="1710" as="sourcePoint"/>
+            <mxPoint x="404" y="1750" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjMGYK_2kaPN_tZI_Yqk-120" value="调试器" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="1620" width="100" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="SjMGYK_2kaPN_tZI_Yqk-121" value="" style="endArrow=classic;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SjMGYK_2kaPN_tZI_Yqk-95" target="SjMGYK_2kaPN_tZI_Yqk-120">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="189.3599999999999" y="1480" as="sourcePoint"/>
+            <mxPoint x="350" y="1580" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SjMGYK_2kaPN_tZI_Yqk-126" value="通讯组件" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="SjMGYK_2kaPN_tZI_Yqk-120" target="SjMGYK_2kaPN_tZI_Yqk-104">
+          <mxGeometry x="-0.5307" y="2" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="205" y="1945.5" as="sourcePoint"/>
+            <mxPoint x="165" y="1915.5" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="155" y="1946"/>
+            </Array>
+            <mxPoint as="offset"/>
           </mxGeometry>
         </mxCell>
       </root>

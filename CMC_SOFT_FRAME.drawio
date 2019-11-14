@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-14T02:31:45.527Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="rcg7Ljhf5XBiClAxGMqw" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-14T02:33:28.358Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="qNbTQaJ-SSYImTl94QsE" version="12.2.6" type="github" pages="1">
   <diagram id="X2vVQ79vodiJDOU-1dmY" name="Page-1">
     <mxGraphModel dx="1173" dy="629" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -10,7 +10,7 @@
         <mxCell id="jsY58lBf7UuHs69GCGZg-82" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="44" y="862" width="107" height="150" as="geometry"/>
         </mxCell>
-        <mxCell id="jsY58lBf7UuHs69GCGZg-80" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsY58lBf7UuHs69GCGZg-80" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="38" y="642" width="707" height="132" as="geometry"/>
         </mxCell>
         <mxCell id="jsY58lBf7UuHs69GCGZg-41" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -70,16 +70,16 @@
         <mxCell id="29Fu6ePBGddKuSXw-dip-38" value="Matlab Simulink" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="113.5" y="496.5" width="256" height="45" as="geometry"/>
         </mxCell>
-        <mxCell id="jsY58lBf7UuHs69GCGZg-1" value="&lt;div&gt;CMC编程&lt;/div&gt;&lt;div&gt;组态软件&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsY58lBf7UuHs69GCGZg-1" value="&lt;div&gt;CMC编程&lt;/div&gt;&lt;div&gt;组态软件&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="166.5" y="895.5" width="80" height="66" as="geometry"/>
         </mxCell>
-        <mxCell id="jsY58lBf7UuHs69GCGZg-2" value="CMC仿真软件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsY58lBf7UuHs69GCGZg-2" value="CMC仿真软件" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="258.5" y="895.5" width="80" height="66" as="geometry"/>
         </mxCell>
-        <mxCell id="jsY58lBf7UuHs69GCGZg-3" value="&lt;div&gt;CMC OPC&lt;/div&gt;&lt;div&gt;服务器软件&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsY58lBf7UuHs69GCGZg-3" value="&lt;div&gt;CMC OPC&lt;/div&gt;&lt;div&gt;服务器软件&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="449.5" y="895.5" width="85" height="66" as="geometry"/>
         </mxCell>
-        <mxCell id="jsY58lBf7UuHs69GCGZg-4" value="&lt;div&gt;CMC调试&lt;/div&gt;&lt;div&gt;诊断软件&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsY58lBf7UuHs69GCGZg-4" value="&lt;div&gt;CMC调试&lt;/div&gt;&lt;div&gt;诊断软件&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="350.5" y="895.5" width="86" height="66" as="geometry"/>
         </mxCell>
         <mxCell id="jsY58lBf7UuHs69GCGZg-8" value="" style="endArrow=none;html=1;" edge="1" parent="1">
@@ -95,7 +95,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="jsY58lBf7UuHs69GCGZg-11" value="&lt;div&gt;生产信息管理系统&lt;/div&gt;（其他厂商）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="448" y="797" width="106" height="45" as="geometry"/>
+          <mxGeometry x="449" y="800" width="105" height="42" as="geometry"/>
         </mxCell>
         <mxCell id="jsY58lBf7UuHs69GCGZg-12" value="&lt;div&gt;实时监控系统&lt;/div&gt;&lt;div&gt;（其他厂商）&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="307" y="797" width="106" height="45" as="geometry"/>
@@ -160,13 +160,13 @@
             <mxPoint x="544.5" y="922" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="jsY58lBf7UuHs69GCGZg-27" value="CMC控制器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsY58lBf7UuHs69GCGZg-27" value="CMC控制器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="188" y="1081" width="80" height="41" as="geometry"/>
         </mxCell>
-        <mxCell id="jsY58lBf7UuHs69GCGZg-28" value="CMC控制器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsY58lBf7UuHs69GCGZg-28" value="CMC控制器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="302" y="1081" width="80" height="39" as="geometry"/>
         </mxCell>
-        <mxCell id="jsY58lBf7UuHs69GCGZg-30" value="CMC控制器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsY58lBf7UuHs69GCGZg-30" value="CMC控制器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="433" y="1081" width="80" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="jsY58lBf7UuHs69GCGZg-33" value="" style="endArrow=none;html=1;" edge="1" parent="1">
@@ -229,7 +229,7 @@
         <mxCell id="jsY58lBf7UuHs69GCGZg-53" value="PLCopen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="49" y="942" width="90" height="47" as="geometry"/>
         </mxCell>
-        <mxCell id="jsY58lBf7UuHs69GCGZg-55" value="CMC控制器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsY58lBf7UuHs69GCGZg-55" value="CMC控制器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="75.5" y="1081.5" width="80" height="41" as="geometry"/>
         </mxCell>
         <mxCell id="jsY58lBf7UuHs69GCGZg-56" value="" style="endArrow=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
@@ -254,10 +254,10 @@
           <mxGeometry x="71.5" y="978.5" width="52" height="21" as="geometry"/>
         </mxCell>
         <mxCell id="jsY58lBf7UuHs69GCGZg-64" value="0A系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="436.5" y="675" width="120" height="60" as="geometry"/>
+          <mxGeometry x="436.5" y="678" width="121" height="57" as="geometry"/>
         </mxCell>
         <mxCell id="jsY58lBf7UuHs69GCGZg-65" value="ERP系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="293" y="674" width="120" height="60" as="geometry"/>
+          <mxGeometry x="291" y="676" width="123" height="58" as="geometry"/>
         </mxCell>
         <mxCell id="jsY58lBf7UuHs69GCGZg-66" value="优化系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="138.5" y="675" width="120" height="60" as="geometry"/>

@@ -1,1 +1,22 @@
-<mxfile host="www.draw.io" modified="2019-11-14T08:11:51.015Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" version="12.2.6" etag="q1DcvUgG5GuyEIZY1LTp" type="github" pages="1"><diagram id="IXGhKNXJWl1mDPTqIkbj">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2019-11-14T08:16:05.678Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="Djv0s0xvRune87RmwL_b" version="12.2.6" type="github" pages="1">
+  <diagram id="IXGhKNXJWl1mDPTqIkbj" name="Page-1">
+    <mxGraphModel dx="1408" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="bsOdD_ndjxKtiAP9XhaS-1" value="web应用" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="140" width="183" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="bsOdD_ndjxKtiAP9XhaS-4" value="Confdes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="140" width="153" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="bsOdD_ndjxKtiAP9XhaS-5" value="IECBuild" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="140" width="183" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="bsOdD_ndjxKtiAP9XhaS-6" value="应用接口API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="240" width="570" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

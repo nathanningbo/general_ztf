@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-15T09:25:44.351Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="lH_6Y1mafCHaUSOtMoUE" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-15T09:27:28.463Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="xz2a0oSvAEhkdtv1cxL9" version="12.2.6" type="github" pages="1">
   <diagram id="8eFCHStxxwOZdWIUavua" name="Page-1">
     <mxGraphModel dx="3413" dy="2197" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -452,16 +452,16 @@
             <mxPoint x="-986.5" y="-510" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="xgJLYvO0U7C_utv53xH0-24" value="CMC控制器1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+        <mxCell id="xgJLYvO0U7C_utv53xH0-24" value="CMC控制器1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="-646.5" y="-950" width="220" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="xgJLYvO0U7C_utv53xH0-25" value="CMC控制器2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+        <mxCell id="xgJLYvO0U7C_utv53xH0-25" value="CMC控制器2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="-646.5" y="-746.5" width="220" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="xgJLYvO0U7C_utv53xH0-26" value="CMC控制器.." style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+        <mxCell id="xgJLYvO0U7C_utv53xH0-26" value="CMC控制器.." style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="-646.5" y="-580" width="220" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="xgJLYvO0U7C_utv53xH0-27" value="CMC控制器n" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+        <mxCell id="xgJLYvO0U7C_utv53xH0-27" value="CMC控制器n" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="-646.5" y="-380" width="220" height="120" as="geometry"/>
         </mxCell>
         <mxCell id="xgJLYvO0U7C_utv53xH0-28" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=20;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xgJLYvO0U7C_utv53xH0-19" target="xgJLYvO0U7C_utv53xH0-24">

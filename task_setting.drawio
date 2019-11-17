@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-17T12:07:36.859Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="bUt4sksDs2Xkp83JlACS" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-17T12:42:14.788Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="02i-2QdKVJIgtBTs0Xu1" version="12.2.6" type="github" pages="1">
   <diagram id="iVK3ShdwLWbgninj1tHv" name="Page-1">
     <mxGraphModel dx="1360" dy="1027" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -184,6 +184,35 @@
             <mxPoint x="-261" y="1078" as="sourcePoint"/>
             <mxPoint x="-211" y="1028" as="targetPoint"/>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-65" value="&lt;div&gt;更新UI&lt;/div&gt;" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=18;fontColor=#000000;" vertex="1" connectable="0" parent="p2M6NOosVOnFMMnS_r7A-64">
+          <mxGeometry x="-0.2449" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-67" value="通讯设置" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="73.5" y="1301" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-68" value="DIDO设置" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="430.5" y="1207" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-69" value="PIPO设置" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="430.5" y="1301" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-71" value="系统设置" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="73.5" y="1207" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-72" value="版本信息" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="-93.5" y="1207" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-73" value="诊断项" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="-93.5" y="1301" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-74" value="用户程序配置" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="224" y="1207" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-75" value="AIAO设置" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="571.5" y="1207" width="120" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>

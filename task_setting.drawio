@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-11-17T11:53:45.604Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="GUei-1uIq3ewT-7S9FJo" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-17T11:55:23.476Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="eYnSJc6krDI1EoxRmnex" version="12.2.6" type="github" pages="1">
   <diagram id="iVK3ShdwLWbgninj1tHv" name="Page-1">
-    <mxGraphModel dx="1573" dy="729" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1371" dy="603" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -34,6 +34,54 @@
         <mxCell id="p2M6NOosVOnFMMnS_r7A-16" value="选择一种任务类型" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="p2M6NOosVOnFMMnS_r7A-14">
           <mxGeometry x="0.5" y="4" relative="1" as="geometry">
             <mxPoint x="278" y="-243" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-18" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="413.0000000000002" y="274" as="sourcePoint"/>
+            <mxPoint x="467" y="274" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-19" value="插入" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="p2M6NOosVOnFMMnS_r7A-18">
+          <mxGeometry x="0.1407" y="-1" relative="1" as="geometry">
+            <mxPoint x="-3.5" y="-1" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-28" value="程序" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="328" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-29" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="p2M6NOosVOnFMMnS_r7A-31" target="p2M6NOosVOnFMMnS_r7A-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-40" y="459" as="sourcePoint"/>
+            <mxPoint x="158" y="358" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-30" value="task_Instance" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="328" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-31" value="&lt;div&gt;循环任务&lt;/div&gt;&lt;div&gt;定时任务&lt;/div&gt;&lt;div&gt;中断任务&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="135.5" y="328" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-32" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="p2M6NOosVOnFMMnS_r7A-28" target="p2M6NOosVOnFMMnS_r7A-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="358" as="sourcePoint"/>
+            <mxPoint x="219" y="358" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-33" value="选择一种任务类型" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="197.7213812555051" y="312.6217644950026" as="geometry">
+            <mxPoint x="278" y="-243" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-34" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="415.0000000000002" y="357.9999999999999" as="sourcePoint"/>
+            <mxPoint x="469" y="357.9999999999999" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2M6NOosVOnFMMnS_r7A-35" value="插入" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="p2M6NOosVOnFMMnS_r7A-34">
+          <mxGeometry x="0.1407" y="-1" relative="1" as="geometry">
+            <mxPoint x="-3.5" y="-1" as="offset"/>
           </mxGeometry>
         </mxCell>
       </root>

@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-27T06:07:53.739Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="aXLDxRd0lQxhB6u9b5m8" version="12.3.1" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-27T06:08:33.429Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="RNaKJ5uMMdTL9vl5Yux5" version="12.3.1" type="github" pages="1">
   <diagram id="YTI-wykyhFXnW_U7o8Pz" name="Page-1">
     <mxGraphModel dx="1787" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -43,8 +43,8 @@
         <mxCell id="JWwVjYSpnplKkP4Ghm3m-19" value="config(组态)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fontColor=#121212;" vertex="1" parent="1">
           <mxGeometry x="720" y="470" width="140" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="JWwVjYSpnplKkP4Ghm3m-17" value="&lt;div&gt;ProjectControl&lt;/div&gt;&lt;div&gt;(frame,logger)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fontColor=#121212;" vertex="1" parent="1">
-          <mxGeometry x="550" y="505" width="140" height="70" as="geometry"/>
+        <mxCell id="JWwVjYSpnplKkP4Ghm3m-17" value="通讯组件" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fontColor=#121212;" vertex="1" parent="1">
+          <mxGeometry x="560" y="470" width="140" height="70" as="geometry"/>
         </mxCell>
         <mxCell id="JWwVjYSpnplKkP4Ghm3m-15" value="&lt;div&gt;ICEBUILD&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fontColor=#121212;" vertex="1" parent="1">
           <mxGeometry x="390" y="470" width="140" height="70" as="geometry"/>
